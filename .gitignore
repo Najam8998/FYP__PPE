@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments & IDE
+.env
+venv/
+.venv/
+.idea/
+.vscode/
+
+# OS generated
+Thumbs.db
+.DS_Store
+
+# Training artifacts & runs
+runs/
+*.log
+
+# Media folders (images & videos are ignored)
+PPE_PICS/*
+!PPE_PICS/.gitkeep
+PPE_VIDS/*
+!PPE_VIDS/.gitkeep
+outputs/*
+!outputs/**/
+!outputs/**/.gitkeep
+
+# Ignore media files by extension
+*.mp4
+*.mov
+*.MOV
+*.heic
+*.HEIC
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.avi
+*.mkv
+
+# Ignore base & large model weights
+*.pt
+*.pth
+*.onnx
+*.engine
+yolov8n.pt
+models/*
+
+# Whitelist core custom model and folder placeholders
+!models/ppe_construction_yolov8.pt
+!models/.gitkeep
